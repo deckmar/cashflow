@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+input[type=text] {
+  padding: 8px;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 70px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.App-login {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.App-login > * {
+  margin: 16px;
+}
+
+.App-userbar {
+}
+
+.Container {
+  width: 900px;
+  margin: 0px auto;
+}
+@media only screen and (max-width: 500px) {
+    .Container {
+      width: 100vw;
+      margin: 0px auto;
+    }
+}
+
+.Events {
+
+}
+
+.Event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Event > * {
+  margin: 8px 0px 8px 0px;
+}
+
+.Splitter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+.Splitter > * {
+  margin: 8px;
+}
+
+.Users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 8px auto;
+}
+.User > img {
+  height: 90px;
+  margin: 16px;
+  border-radius: 10%;
+}
+
+.Payment {
+  display: flex;
+  align-items: center;
+}
+.Payment > * {
+  margin: 4px;
+}
+
+.Flow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px auto;
+}
+.Flow > * {
+  display: flex;
+  align-items: center;
+}
+.Flow-amount {
+  width: 40%;
+}
+.Flow-user {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+.Flow-user > * {
+  margin: 8px;
+}
+
+.Currencies {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 16px auto;
+}
+
+.Currency {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Expander {
+  margin: 8px 0px 8px 0px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3) inset;
+  position: relative;
+  transition: box-shadow 200ms ease-in-out, margin 200ms ease-in-out;
+}
+.Expander-expanded {
+  margin: 16px 0px 16px 0px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+}
+.Expander-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Expander-arrow {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  font-size: 20pt;
+  transition: transform 200ms ease-in-out;
+}
+.Expander-expanded .Expander-arrow {
+  transform: rotate(90deg);
+}
+.Expander-content {
+  padding: 16px;
+}
+
+
